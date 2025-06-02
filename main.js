@@ -42,8 +42,8 @@ app.whenReady().then(() => {
   tray.setContextMenu(Menu.buildFromTemplate([{ role: 'quit' }]));
 
   globalShortcut.register('Alt+Shift+D', () => { disabled = !disabled });
-  globalShortcut.register('Control+C+Z', () => { if (!disabled) { openTranslateWindow("es", "en"); }});
-  globalShortcut.register('Control+C+X', () => { if (!disabled) { openTranslateWindow("en", "es"); }});
+  globalShortcut.register('Control+C+Q', () => { if (!disabled) { openTranslateWindow("es", "en"); }});
+  globalShortcut.register('Control+C+W', () => { if (!disabled) { openTranslateWindow("en", "es"); }});
 });
 
 app.on('window-all-closed', (e) => {
